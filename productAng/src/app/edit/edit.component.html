@@ -1,0 +1,14 @@
+
+<h3> Edit this product</h3>
+<h3>Name:</h3>
+<form (submit)="update($event)">
+   <!-- {{author | json}}  -->
+   <h3>Title: <input type ="text" [(ngModel)] = "product.title" name = "product.title"></h3>
+   <h3> Price: <input type ="text" [(ngModel)] = "product.price" name = "product.price"></h3>
+   <h3> Image url: <input type ="text" [(ngModel)] = "product.iurl" name = "product.iurl"></h3>
+
+     <!-- {{author | json}} -->
+   <h3> <input type="submit" value="Update"><button (click) ="Delete(product._id)">Delete</button></h3>
+
+   </form>
+<h3> {{errmessage}} </h3>

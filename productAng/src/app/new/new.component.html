@@ -1,0 +1,11 @@
+
+<h3>Create a new project:</h3>
+<form (submit)="Create()">
+<h3>Title: <input type ="text" [(ngModel)] = "product.title" name = "product.title"></h3>
+<h3> Price: <input type ="text" [(ngModel)] = "product.price" name = "product.price"></h3>
+<h3> Image url: <input type ="text" [(ngModel)] = "product.iurl" name = "product.iurl"></h3>
+
+  <!-- {{author | json}} -->
+<h3> <button [routerLink] = "['products']">Cancel</button><input type="submit" value="Create"></h3>
+</form>
+     <h3> {{errmessage}} </h3>

@@ -1,0 +1,14 @@
+<div id = "wrapper">
+<h1>
+  Products List
+</h1>
+
+  <div *ngFor ="let product of products" class = "display">
+   <h3>{{product.title}}</h3>
+   <h3>{{product.price}}</h3>
+   <img [src] = "sanitizer.bypassSecurityTrustUrl(product.iurl)"/>
+      <h3> <button [routerLink] = "['edit', product._id]">Edit</button>
+       <button (click) ="Delete(product._id)">Delete</button> </h3>
+  </div>
+
+</div>
